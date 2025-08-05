@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Billing Invoice Software</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css">
+
+    
+</head>
+<body class="bodys">
+<!-- Heading start -->
+    <div class="head">
+        <h1>Billing Invoice System</h1>
+    </div>
+
+    <!-- Main cards start -->
+
+
+<div class="main" >
+
+
+    <!-- cards 1 start -->
+   <div class="cards1 col-12 col-sm-3 col-md-3 col-lg-3">
+
+        <h3>Total Bill</h3>
+        <br>
+        <p>Total items bill :</p>
+        <ul class="list-group">
+            <li id="bill" class="list-group-item">Total Amount</li>
+        </ul>
+        <br>
+        <button class="btn btn-primary" onclick="btnT()">Generate Bill</button>
+
+   </div>
+
+   <!-- cards 2 start -->
+   <div class="cards2 col-12 col-sm-3 col-md-3 col-lg-3">
+
+    <h3>Insert Items Information</h3>
+    <br>
+    <p>Item Name :</p>
+    <div class="input-group mb-3">
+        <input id="inpN" type="text" class="form-control" placeholder="Enter Items" aria-label="Username" aria-describedby="basic-addon1">
+      </div>
+      <p>Item Price :</p>
+    <div class="input-group mb-3">
+        <input id="inpP" type="number" class="form-control" placeholder="Enter Items Price" aria-label="Username" aria-describedby="basic-addon1">
+      </div>
+     <br>
+     <button class="btn btn-primary" onclick="btnA()">Add Items</button>
+     <hr>
+     <button class="btn btn-danger" onclick="btnD()">Delete All</button>
+    </div>
+
+
+
+
+
+
+
+<!--Second cards start -->
+<div class="second card mt-4 col-12 col-sm-8 col-md-6 col-xl-8">
+ <div class="nav1">
+     <div>
+        <button id="city" onclick="btnc()" type="button" class="btn btn-primary p-2" style="border-right: 2px solid white; text-align: center;" >Enter City Name</button>
+        <ul id="list1" class="list-group"></ul>
+     </div>
+     <div>
+        <button id="shop" onclick="btns()" type="button" class="btn btn-primary p-2" style="border-right: 2px solid white; text-align: center;">Enter Shop Name</button>
+        <ul id="list2" class="list-group"></ul>
+     </div>
+     <div>
+        <button id="date" onclick="btnd()" type="button" class="btn btn-primary p-2" style="border-right: 2px solid white; text-align: center;">Enter Date</button>
+        <ul id="list3" class="list-group"></ul>
+     </div>
+ </div>
+ <br>
+ <hr>
+ <br>
+ <div class="nav2">
+    <div class="task-text text-start p-3"><h3>Item Name</h3></div>
+    <div class="task-text text-center p-3"><h3>Item Price</h3></div>
+    <div class="task-text text-end p-3"><h3>Remove Items</h3></div>
+ </div>
+ <hr>
+ <br>
+ <ol id="list" class="list-group list-group-numbered">
+
+ </ol>
+
+
+</div>
+
+
+
+</div>
+
+  
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    
+</body>
+</html>

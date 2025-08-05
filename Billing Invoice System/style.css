@@ -1,0 +1,87 @@
+.bodys{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:rgb(191, 230, 243);
+    padding: 10px;
+}
+.head{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(44, 44, 44);
+}
+.cards1{
+    background-color:rgb(232, 249, 255);
+    margin-top: 2%;
+    padding: 20px;
+    height: 30vh;
+    width: 25%;
+    border-radius: 15px;
+    border: 3px solid rgb(155, 203, 219);
+    box-shadow: inset 6px 6px 10px 0 rgba(0, 0, 0,0.2),
+    inset -6px -6px 10px 0 rgba(255,255 ,255,0.5);
+}
+.cards2{
+    background-color: rgb(232, 249, 255);
+    margin-top: 2%;
+    padding: 20px;
+    height: 45vh;
+    width: 25%;
+    border-radius: 15px;
+    border: 3px solid rgb(155, 203, 219);
+    box-shadow: inset 6px 6px 10px 0 rgba(0, 0, 0,0.2),
+    inset -6px -6px 10px 0 rgba(255,255 ,255,0.5);
+}
+.second{
+padding: 15px;
+position: absolute;
+top: -80vh;
+left:30%;
+}
+@media screen and (max-width:575px){
+    .second{
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        margin-top: 10%;
+    }
+    .cards1{
+        height: 35vh;
+    }
+    .cards2{
+        height: 63vh;
+    }
+}
+
+.btn{
+    width: 100%;
+}
+
+.nav1{
+    display: flex;
+    justify-content: space-evenly;
+}
+.nav2{
+    display: flex;
+    justify-content: space-between;
+}
+.task-text {
+    flex-grow: 1;
+    margin-right: 10px;
+}
+.btn-sm {
+    margin-left: 2px;
+}
+
+.task-text {
+    flex: 1;
+    margin-right: 10px;
+}
+.text-center {
+    text-align: center;
+}
+.text-start {
+    text-align: left;
+}
+.text-end {
+    text-align: right;
+}
+
